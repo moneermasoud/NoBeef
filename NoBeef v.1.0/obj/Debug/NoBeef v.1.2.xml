@@ -1,0 +1,68 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+NoBeefv.1.2
+</name>
+</assembly>
+<members>
+<member name="P:NoBeef_v._1._2.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.iconfinder_Github_1298743">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.iconfinder_Play_3213446">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.iconfinder_simpline_35_2305625">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.if_badge_cancel_103319">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.if_cancel_103431_2_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.if_icon_minus_211864_2_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.if_web_744563">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.loading">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.loading_black">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.loading_blue">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:NoBeef_v._1._2.My.Resources.Resources.loading_green">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:NoBeef_v._1._2.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

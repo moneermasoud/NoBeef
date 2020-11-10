@@ -1,0 +1,11 @@
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.0.vbproj.GenerateResource.Cache
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\NoBeef v.1.2.exe.config
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef_v._1._2.about.resources
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef_v._1._2.main.resources
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef_v._1._2.Resources.resources
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\NoBeef v.1.2.exe
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\NoBeef v.1.2.pdb
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\NoBeef v.1.2.xml
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.exe
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.xml
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.pdb
