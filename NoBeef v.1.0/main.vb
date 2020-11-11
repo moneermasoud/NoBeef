@@ -132,11 +132,11 @@ Public Class main
         Try
             Dim request As HttpWebRequest = TryCast(WebRequest.Create(url), HttpWebRequest)
             request.Method = "HEAD"
-            If CheckBox2.Checked = True Then
-                request.AllowAutoRedirect = True
-            Else
-                request.AllowAutoRedirect = False
-            End If
+            'If CheckBox2.Checked = True Then
+            '    request.AllowAutoRedirect = True
+            'Else
+            '    request.AllowAutoRedirect = False
+            'End If
 
             Dim response As HttpWebResponse = TryCast(request.GetResponse(), HttpWebResponse)
             response.Close()

@@ -82,6 +82,7 @@ Partial Class main
         Me.CheckBox2.TabIndex = 11
         Me.CheckBox2.Text = "Allow Auto Redirect"
         Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.CheckBox2.Visible = False
         '
         'PictureBox1
         '

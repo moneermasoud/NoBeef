@@ -9,3 +9,5 @@ D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\NoBeef v.1.2.xml
 D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.exe
 D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.xml
 D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.pdb
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\GitPlugin.resources.dll
+D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.0.vbprojResolveAssemblyReference.cache
