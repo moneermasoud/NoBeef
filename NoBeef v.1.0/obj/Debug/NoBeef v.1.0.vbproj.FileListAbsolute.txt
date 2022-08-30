@@ -11,3 +11,15 @@ D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.xml
 D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.pdb
 D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\GitPlugin.resources.dll
 D:\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.0.vbprojResolveAssemblyReference.cache
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\NoBeef v.1.2.exe.config
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.exe
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.xml
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.2.pdb
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\NoBeef v.1.2.exe
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\NoBeef v.1.2.pdb
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\bin\Debug\NoBeef v.1.2.xml
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.0.vbprojResolveAssemblyReference.cache
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef_v._1._2.about.resources
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef_v._1._2.main.resources
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef_v._1._2.Resources.resources
+D:\MyWork\برمجة\NoBeef v.1.0\NoBeef v.1.0\obj\Debug\NoBeef v.1.0.vbproj.GenerateResource.Cache

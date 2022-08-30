@@ -44,6 +44,8 @@ Public Class main
 
         count_dictionary()
         PictureBox1.Visible = False
+        System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -51,36 +53,41 @@ Public Class main
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ' check if url textbox not null
-        If url.Text = vbNullString Then
-            MsgBox("Please insert target => like this : site.com or www.site.com", MsgBoxStyle.Exclamation, "No B33f v.1.0")
-            Exit Sub
+        If Not BackgroundWorker1.IsBusy Then
+            BackgroundWorker1.RunWorkerAsync()
         End If
-        '#######################################################################################
-        Try
-            MsgBox("Please wait 5 minutes or 10 minutes , don't touch anything", MsgBoxStyle.Information, "No B33f v.1.0")
-            PictureBox1.Visible = True
-            For i = 0 To ListView1.Items.Count - 1
-                Dim urlcheck As String = "http://" & url.Text & "/" & ListView1.Items(i).SubItems(1).Text
+
+        ' check if url textbox not null
+        'If url.Text = vbNullString Then
+        '    MsgBox("Please insert target => like this : site.com or www.site.com", MsgBoxStyle.Exclamation, "No B33f v.1.0")
+        '    Exit Sub
+        'End If
+        ''#######################################################################################
+        'Try
+        '    MsgBox("Please wait 5 minutes or 10 minutes , don't touch anything", MsgBoxStyle.Information, "No B33f v.1.0")
+        '    PictureBox1.Visible = True
+        '    For i = 0 To ListView1.Items.Count - 1
+        '        Dim urlcheck As String = "http://" & url.Text & "/" & ListView1.Items(i).SubItems(1).Text
+        '        If BackgroundWorker1.CancellationPending Then Exit Sub
 
 
-                If checkFileExists(urlcheck) = True Then
+        '        If checkFileExists(urlcheck) = True Then
 
-                    output.AppendText("http://" & url.Text & "/" & ListView1.Items(i).SubItems(1).Text & " ==> " & "Found" & vbNewLine)
-                    PictureBox1.Refresh()
-                End If
+        '            output.AppendText("http://" & url.Text & "/" & ListView1.Items(i).SubItems(1).Text & " ==> " & "Found" & vbNewLine)
+        '            PictureBox1.Refresh()
+        '        End If
 
-                'Thread.Sleep(100)
-                PictureBox1.Refresh()
-            Next
-            MsgBox("Successfully Completed", MsgBoxStyle.Information, "No B33f v.1.0")
-            PictureBox1.Visible = False
-        Catch ex As Exception
-            MsgBox(ex.Message)
-        Finally
+        '        'Thread.Sleep(100)
+        '        PictureBox1.Refresh()
+        '    Next
+        '    MsgBox("Successfully Completed", MsgBoxStyle.Information, "No B33f v.1.0")
+        '    PictureBox1.Visible = False
+        'Catch ex As Exception
+        '    MsgBox(ex.Message)
+        'Finally
 
-            PictureBox1.Visible = False
-        End Try
+        '    PictureBox1.Visible = False
+        'End Try
         '#######################################################################################
 
     End Sub
@@ -124,7 +131,12 @@ Public Class main
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        about.Show()
+        'about.Show()
+        If BackgroundWorker1.IsBusy Then
+            BackgroundWorker1.CancelAsync()
+            PictureBox1.Visible = False
+            MsgBox("Stop ...")
+        End If
     End Sub
 
     Private Function checkFileExists(ByVal url As String) As Boolean
@@ -163,4 +175,59 @@ Public Class main
 
 
 
+    Private Sub BackgroundWorker1_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles BackgroundWorker1.DoWork
+        ' check if url textbox not null
+        If url.Text = vbNullString Then
+            MsgBox("Please insert target => like this : site.com or www.site.com", MsgBoxStyle.Exclamation, "No B33f v.1.0")
+            Exit Sub
+        End If
+        '#######################################################################################
+        Try
+            MsgBox("Please wait 5 minutes or 10 minutes , don't touch anything", MsgBoxStyle.Information, "No B33f v.1.0")
+            PictureBox1.Visible = True
+            For i = 0 To ListView1.Items.Count - 1
+                If BackgroundWorker1.CancellationPending Then Exit Sub
+
+                Dim urlcheck As String = "http://" & url.Text & "/" & ListView1.Items(i).SubItems(1).Text
+
+
+                If checkFileExists(urlcheck) = True Then
+
+                    output.AppendText("http://" & url.Text & "/" & ListView1.Items(i).SubItems(1).Text & " ==> " & "Found" & vbNewLine)
+                    PictureBox1.Refresh()
+                End If
+
+                'Thread.Sleep(100)
+                PictureBox1.Refresh()
+            Next
+            MsgBox("Successfully Completed", MsgBoxStyle.Information, "No B33f v.1.0")
+            ' PictureBox1.Visible = False
+        Catch ex As Exception
+            MsgBox(ex.Message)
+
+        Finally
+
+            PictureBox1.Visible = False
+        End Try
+        ''#######################################################################################
+    End Sub
+
+    Private Sub BackgroundWorker1_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles BackgroundWorker1.RunWorkerCompleted
+        'Try
+        '    If e.Cancelled Then
+
+        '        MsgBox("done ....")
+
+        '    ElseIf e.Error IsNot Nothing Then
+        '        MsgBox(e.Error.Message)
+
+        '    Else
+        '        MsgBox(e.Result.ToString)
+
+        '    End If
+        'Catch ex As Exception
+        '    MsgBox(ex.Message)
+        'End Try
+
+    End Sub
 End Class

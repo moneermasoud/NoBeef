@@ -40,6 +40,7 @@ Partial Class main
         Me.ListView1 = New System.Windows.Forms.ListView()
         Me.output = New System.Windows.Forms.TextBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -156,7 +157,7 @@ Partial Class main
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(80, 28)
         Me.Button2.TabIndex = 4
-        Me.Button2.Text = "About"
+        Me.Button2.Text = "Stop"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'Button1
@@ -227,6 +228,11 @@ Partial Class main
         Me.output.Size = New System.Drawing.Size(534, 255)
         Me.output.TabIndex = 2
         '
+        'BackgroundWorker1
+        '
+        Me.BackgroundWorker1.WorkerReportsProgress = True
+        Me.BackgroundWorker1.WorkerSupportsCancellation = True
+        '
         'main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 16.0!)
@@ -268,5 +274,6 @@ Partial Class main
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 
 End Class
